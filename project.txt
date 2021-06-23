@@ -1,0 +1,27 @@
+import requests
+import 0s
+from datetime import datetime
+api key = 87d845b@bócf29baala73cc34b067a95 
+location = input ("Enter the city name: ")
+complete_api_link = "https: /api.openweathermap. org/data/2.5/weather?q= "+locati
+api-link = requests.get (complete_api_link)
+api data = api_link. json ()
+#create variables to store and display data
+temp_city = ((api_data[ 'main ' 1U'temp" ]) 273.15)
+weather_descapi data [ 'weather ] [0][ ' description']
+hmdt= api_data[ 'main ']["hunidity "]
+wind_spd= api_data[ wind '] [ ' speed' ]
+date_time = datetime.now().strftime ("%d b %Y I SI:%M:%S %p")
+----- ")
+II 4".format (Location . upper (, date_time))
+print ("----.
+- - ")
+print ("weather Statts for {t
+II 4".format (Location. upper (), date_time) )
+print (".---
+print ("Current temperature is: {:.2f} degc".format (temp_city))
+print (Current weather desc :", weather_desc)
+print ("Current Humidity
+:", hmdt, **)
+print ("Current wind speed
+:",wind_spd, "kmph')
